@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+      <video autoplay muted loop id="bg-video">
+    <source src="Cartoon_Rock_Paper_Scissors_Animation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="container">
+    <h1>Rock ✊ Paper ✋ Scissors ✌️</h1>
+    <p class="subtitle">Choose your move and try to beat the computer!</p>
+
+    <div class="buttons">
+      <button id="rock">✊</button>
+      <button id="paper">✋</button>
+      <button id="scissors">✌️</button>
+    </div>
+
+    <!-- NEW: Computer Choice Display -->
+    <div class="choice-box">
+      <p>🤖 Computer chose:</p>
+      <span id="computer-choice">❔</span>
+    </div>
+
+    <p id="result">Make your move!</p>
+
+    <div class="scores">
+      <p>Your score: <span id="user-score">0</span></p>
+      <p>Computer score: <span id="computer-score">0</span></p>
+    </div>
+
+    <button id="reset" class="reset-btn">🔄 Reset Game</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

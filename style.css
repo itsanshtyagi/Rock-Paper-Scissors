@@ -1,0 +1,137 @@
+/* General styles */
+body {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Game container */
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  border: none;
+  font-size: 3rem;
+  margin: 0 0.7rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  background-color: coral;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Scores */
+.scores {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+#user-score, #computer-score {
+  background: #f1f1f1;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Result text */
+#result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+  min-height: 30px;
+}
+
+/* Reset button */
+.reset-btn {
+  background: #ff4757;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #e84118;
+}
+
+
+
+/* Computer choice box */
+.choice-box {
+  margin: 15px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+}
+
+#computer-choice {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 2rem;
+  padding: 0.4rem 1rem;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+/* Background video */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* behind everything */
+  object-fit: cover;
+  filter: brightness(0.6); /* darkens video for better text visibility */
+}
+
+/* Ensure text is readable */
+.container {
+  position: relative;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
